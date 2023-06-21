@@ -21,7 +21,7 @@ def calculate_rs_ratios(prices, benchmark):
         rs_ratio = prices[etf] / benchmark_prices
         rs_ratios[etf] = rs_ratio
 
-    rs_ratios.columns = pd.MultiIndex.from_product([rs_ratios.columns, ['RS Ratio']])
+    # rs_ratios.columns = pd.MultiIndex.from_product([rs_ratios.columns, ['RS Ratio']])
 
     return rs_ratios
 
